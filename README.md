@@ -7,7 +7,7 @@
 
 ## 插件的用法
 
-- 如果你想在你的maven中使用,就1直接`git clone`这个项目到你的IDEA，然后使用Maven`clean|install`将这个项目添加到Maven本地仓库里去。
+- 如果你想在你的maven中使用,就直接`git clone`这个项目到你的IDEA，然后使用Maven`clean|install`将这个项目添加到Maven本地仓库里去。
 之后你只要在你的要使用这个插件的项目的pom.xml中加入如下内容便可：
 
 ```
