@@ -11,31 +11,30 @@
 之后你只要在你的要使用这个插件的项目的pom.xml中加入如下内容便可：
 
 ```
-        <plugin>
-		<groupId>org.mybatis.generator</groupId>
-		<artifactId>mybatis-generator-maven-plugin</artifactId>
-		<version>${generator.version}</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>${mysql.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>net.conn</groupId>
-                        <artifactId>mybatis-generator-lombok-plugin</artifactId>
-                        <version>1.0-SNAPSHOT</version>
-                    </dependency>
-		</dependencies>
-		<configuration>
-			<configurationFile>src/main/resources/generator/generatorConfig.xml</configurationFile>
-			<!--是否覆盖同名文件（只是针对XML文件,java文件生成类似*.java.1、*.java.2形式的文件）-->
-			<overwrite>true</overwrite>
-			<!--是否将生成过程输出至控制台-->
-			<verbose>true</verbose>
-		</configuration>
-	</plugin>
-
+    <plugin>
+        <groupId>org.mybatis.generator</groupId>
+        <artifactId>mybatis-generator-maven-plugin</artifactId>
+        <version>${generator.version}</version>
+        <dependencies>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.conn</groupId>
+                <artifactId>mybatis-generator-lombok-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+        <configuration>
+            <configurationFile>src/main/resources/generator/generatorConfig.xml</configurationFile>
+            <!--是否覆盖同名文件（只是针对XML文件,java文件生成类似*.java.1、*.java.2形式的文件）-->
+            <overwrite>true</overwrite>
+            <!--是否将生成过程输出至控制台-->
+            <verbose>true</verbose>
+        </configuration>
+    </plugin>
 ```
 
 同时添加配置文件`generatorConfig.xml`,使用的时候请根据项目需要自行修改对应配置
