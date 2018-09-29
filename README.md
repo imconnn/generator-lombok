@@ -12,9 +12,9 @@
 
 ```
         <plugin>
-				<groupId>org.mybatis.generator</groupId>
-				<artifactId>mybatis-generator-maven-plugin</artifactId>
-				<version>${generator.version}</version>
+		<groupId>org.mybatis.generator</groupId>
+		<artifactId>mybatis-generator-maven-plugin</artifactId>
+		<version>${generator.version}</version>
                 <dependencies>
                     <dependency>
                         <groupId>mysql</groupId>
@@ -26,15 +26,15 @@
                         <artifactId>mybatis-generator-lombok-plugin</artifactId>
                         <version>1.0-SNAPSHOT</version>
                     </dependency>
-                </dependencies>
-				<configuration>
-					<configurationFile>src/main/resources/generator/generatorConfig.xml</configurationFile>
-					<!--是否覆盖同名文件（只是针对XML文件,java文件生成类似*.java.1、*.java.2形式的文件）-->
-					<overwrite>true</overwrite>
-					<!--是否将生成过程输出至控制台-->
-					<verbose>true</verbose>
-				</configuration>
-		</plugin>
+		</dependencies>
+		<configuration>
+			<configurationFile>src/main/resources/generator/generatorConfig.xml</configurationFile>
+			<!--是否覆盖同名文件（只是针对XML文件,java文件生成类似*.java.1、*.java.2形式的文件）-->
+			<overwrite>true</overwrite>
+			<!--是否将生成过程输出至控制台-->
+			<verbose>true</verbose>
+		</configuration>
+	</plugin>
 
 ```
 
